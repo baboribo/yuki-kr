@@ -1,0 +1,43 @@
+/* Heading */
+@font-face {
+	font-family: 'A2Z Bold';
+	font-weight: 700;
+	src: url('/fonts/A2Z/2-A2Z-Bold.woff2') format('woff2-variations');
+}
+
+@font-face {
+	/* used main */
+	font-family: 'A2Z SemiBold';
+	font-weight: 600;
+	src: url('/fonts/A2Z/1-A2Z-SemiBold.woff2') format('woff2-variations');
+}
+
+@font-face {
+	font-family: 'A2Z Medium';
+	font-weight: 500;
+	src: url('/fonts/A2Z/0-A2Z-Medium.woff2') format('woff2-variations');
+}
+
+/* Body */
+@font-face {
+	/* used main */
+	font-family: 'SUIT Variable';
+	font-weight: 100 900;
+	src: url('/fonts/suit/SUIT-Variable.woff2') format('woff2-variations');
+}
+
+/* Apply */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* 헤딩에 사용함 */
+	font-family: 'A2Z SemiBold', sans-serif;
+}
+
+body {
+	/* 본문에 사용함 */
+	font-family: 'SUIT Variable', sans-serif;
+}
