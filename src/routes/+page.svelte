@@ -1,10 +1,17 @@
 <script>
-    let name = "yuki";
-    let toggle = false;
-
+    // 불러오기
+    import { version } from "$app/environment";
     import { links } from "$lib/data/linklist";
     import { onMount } from "svelte";
+    import { animeItems } from "$lib/anime";
+
+    // 변수
+    let name = "yuki";
+    let toggle = false;
+    const appVersion = version;
+
     onMount(() => {
+        animeItems(); // 애니메이션 효과 적용
         setInterval(() => {
             toggle = !toggle;
             name = toggle ? "yuki" : "yuki!";
@@ -16,16 +23,27 @@
 <header>
     <h1>{name}</h1>
     <p>yuki.kr</p>
-    <img src="/images/tsukasa.png" alt="tsukasa" class="profile-image" />
+    <img
+        src="/images/ebb7281617a98caaae92dd11412eda19.jpg"
+        alt="tsukasa"
+        class="profile-image"
+    />
 </header>
 
 <!-- Link List -->
 <ul class="link-list">
     {#each links as link}
-        <li class="link-item">
-            <a href={link.url} target="_blank">
+        <li class="link-anime-container">
+            <a href={link.url} target="_blank" class="link-item">
+                <img
+                    src="https://favicon.im/{link.url}?default-avatar={link.url}"
+                    alt={link.name}
+                    class="link-icon"
+                />
                 {link.name}
             </a>
         </li>
     {/each}
 </ul>
+
+<footer>버전: {appVersion}</footer>

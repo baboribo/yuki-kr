@@ -1,6 +1,13 @@
+header {
+    opacity: 0%;
+}
+
 body {
     margin: 0;
     padding: 4px 20px;
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -8,23 +15,87 @@ a {
     text-decoration: none;
 }
 
+footer {
+    opacity: 0%;
+    text-align: center;
+    margin-top: 100%;
+    margin-bottom: 30px;
+}
+
 .link-list {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 6px;
+    gap: 8px;
     flex-direction: column;
 }
 
 .link-item {
-    background-color: #f0f0f0;
+    background-color: #f0f0f6;
     padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.link-item:hover {
+    background-color: #ebe2ff;
+}
+
+.link-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 10%;
+}
+
+.link-anime-container {
+    opacity: 0%;
 }
 
 .profile-image {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* 반응형 브레이크 포인트 */
+@media screen and (max-width: 480px) {
+
+    /** 모바일 세로 */
+    .link-list {
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .link-item {
+        padding: 10px 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /** 모바일 가로, 타블렛 세로 */
+    .link-list {
+        gap: 10px;
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .link-item {
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /** 타블렛 가로, 노트북 */
+}
+
+@media screen and (min-width: 1160px) {
+
+    /** 타블렛 가로, 노트북 */
 }

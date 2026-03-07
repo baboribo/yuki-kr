@@ -1,7 +1,7 @@
 {
 	"name": "yuki-kr",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -19,5 +19,9 @@
 		"svelte-check": "^4.4.2",
 		"typescript": "^5.9.3",
 		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"@icons-pack/svelte-simple-icons": "^7.1.0",
+		"animejs": "^4.3.6"
 	}
 }
