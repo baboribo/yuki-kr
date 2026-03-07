@@ -1,5 +1,5 @@
 <script>
-	import favicon from "/images/tsukasa.png"; // 파비콘
+	import favicon from "$lib/assets/akira.jpg"; // 파비콘
 
 	let { children } = $props();
 

@@ -23,11 +23,7 @@
 <header>
     <h1>{name}</h1>
     <p>yuki.kr</p>
-    <img
-        src="/images/ebb7281617a98caaae92dd11412eda19.jpg"
-        alt="tsukasa"
-        class="profile-image"
-    />
+    <img src="/images/akira.jpg" alt="akira" class="profile-image" />
 </header>
 
 <!-- Link List -->
