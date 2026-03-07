@@ -1,10 +1,10 @@
 <script>
-	import favicon from "$lib/assets/favicon.svg";
+	import favicon from "/images/tsukasa.png"; // 파비콘
 
 	let { children } = $props();
 
-	import "$lib/styles/fonts.css";
-	import "$lib/styles/global.css";
+	import "$lib/styles/fonts.css"; // 폰트 스타일을 가져옵니다
+	import "$lib/styles/global.css"; // 글로벌 스타일을 가져옵니다
 </script>
 
 <svelte:head>
