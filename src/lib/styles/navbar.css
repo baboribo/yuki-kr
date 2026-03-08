@@ -7,12 +7,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-bottom: 16px;
+    left: 10%;
+    right: 10%;
     position: fixed;
     top: 10px;
     z-index: 1000;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
 
     /** 모바일 세로 */
     .navbar {
@@ -24,6 +26,24 @@
 @media screen and (min-width: 768px) {
 
     /** 모바일 가로, 타블렛 세로 */
+    .navbar {
+        left: 20%;
+        right: 20%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /** 타블렛 가로, 노트북 */
+    .navbar {
+        left: 20%;
+        right: 20%;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+
+    /** 타블렛 가로, 노트북 */
     .navbar {
         left: 30%;
         right: 30%;

@@ -1,7 +1,7 @@
 {
 	"name": "yuki-kr",
 	"private": true,
-	"version": "2026.308.3-sora",
+	"version": "2026.308.4-sora",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
