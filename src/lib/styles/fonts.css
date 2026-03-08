@@ -15,6 +15,7 @@
 @font-face {
 	font-family: 'A2Z Medium';
 	font-weight: 500;
+	line-height: 130%;
 	src: url('/fonts/A2Z/0-A2Z-Medium.woff2') format('woff2-variations');
 }
 
@@ -23,6 +24,7 @@
 	/* used main */
 	font-family: 'SUIT Variable';
 	font-weight: 100 900;
+	line-height: 130%;
 	src: url('/fonts/suit/SUIT-Variable.woff2') format('woff2-variations');
 }
 
@@ -35,6 +37,8 @@ h5,
 h6 {
 	/* 헤딩에 사용함 */
 	font-family: 'A2Z SemiBold', sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
 body {

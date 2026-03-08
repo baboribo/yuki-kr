@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+}
+
+@media screen and (min-width: 480px) {
+
+    /** 모바일 세로 */
+    .navbar {
+        left: 10%;
+        right: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /** 모바일 가로, 타블렛 세로 */
+    .navbar {
+        left: 30%;
+        right: 30%;
+    }
+}

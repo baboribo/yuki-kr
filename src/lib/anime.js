@@ -13,13 +13,16 @@ export function animeItems() {
         y: [70, 0],
         opacity: [0, 1],
         ease: spring({ bounce: -0.20, duration: 370 }),
+        delay: 200,
     }).add('.link-anime-container', {
         y: [70, 0],
         opacity: [0, 1],
+        delay: 0,
         ease: spring({ bounce: -0.20, duration: 370 }),
-    }, '-=1000').add('footer', {
+    }, '-=1050').add('footer', {
         y: [70, 0],
         opacity: [0, 1],
         ease: spring({ bounce: -0.20, duration: 370 }),
+        delay: 200,
     }, '-=1000');
 }

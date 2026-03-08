@@ -23,7 +23,11 @@
 <header>
     <h1>{name}</h1>
     <p>yuki.kr</p>
-    <img src="/images/akira.jpg" alt="akira" class="profile-image" />
+    <img
+        src="https://media1.tenor.com/m/-aj5s_ZkA_MAAAAC/lucky-star-kagami.gif"
+        alt="kagami"
+        class="gif-container"
+    />
 </header>
 
 <!-- Link List -->
