@@ -23,11 +23,19 @@
 <header>
     <h1>{name}</h1>
     <p>yuki.kr</p>
-    <img
-        src="https://media1.tenor.com/m/-aj5s_ZkA_MAAAAC/lucky-star-kagami.gif"
-        alt="kagami"
-        class="gif-container"
-    />
+    <div class="gif-wrapper">
+        <img
+            src="https://media1.tenor.com/m/-aj5s_ZkA_MAAAAC/lucky-star-kagami.gif"
+            alt="a purple haired anime girl with a brown bow in her hair"
+            class="gif-container"
+        />
+        <p>
+            <a
+                href="https://tenor.com/ko/view/lucky-star-kagami-scared-job-job-application-gif-17989903262859658227"
+                target="_blank">Lucky Star Kagami GIF</a
+            >
+        </p>
+    </div>
 </header>
 
 <!-- Link List -->
