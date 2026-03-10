@@ -1,12 +1,12 @@
 <script>
     // 불러오기
-    import { version } from "$app/environment";
-    import { links } from "$lib/data/linklist";
     import { onMount } from "svelte";
-    import { animeItems } from "$lib/anime";
+    import { version } from "$app/environment"; // 패키지에서 버전 가져옴
+    import { links } from "$lib/data/linklist"; // 링크 리스트
+    import { t } from "$lib/data/textall"; // 전체 텍스트 데이터
+    import { animeItems } from "$lib/anime"; // 애니메이션 효과 함수
 
     // 변수
-    let name = "yuki";
     let toggle = false;
     const appVersion = version;
 
@@ -14,25 +14,25 @@
         animeItems(); // 애니메이션 효과 적용
         setInterval(() => {
             toggle = !toggle;
-            name = toggle ? "yuki" : "yuki!";
+            t.header.sitename = toggle ? "yuki" : "yuki!";
         }, 500);
     });
 </script>
 
 <!-- Header -->
 <header>
-    <h1>{name}</h1>
-    <p>yuki.kr</p>
+    <h1>{t.header.sitename}</h1>
+    <p>{t.header.description}</p>
     <div class="gif-wrapper">
         <img
             src="https://media1.tenor.com/m/-aj5s_ZkA_MAAAAC/lucky-star-kagami.gif"
-            alt="a purple haired anime girl with a brown bow in her hair"
+            alt={t.images.alt.kagamigif}
             class="gif-container"
         />
         <p>
             <a
                 href="https://tenor.com/ko/view/lucky-star-kagami-scared-job-job-application-gif-17989903262859658227"
-                target="_blank">Lucky Star Kagami GIF</a
+                target="_blank">{t.images.title.kagamigif}</a
             >
         </p>
     </div>
@@ -54,4 +54,4 @@
     {/each}
 </ul>
 
-<footer>버전: {appVersion}</footer>
+<footer>{t.version}: {appVersion}</footer>
