@@ -8,5 +8,10 @@ export const links = [
         id: 2,
         name: "Twitter",
         url: "https://x.com/uewe9l"
+    },
+    {
+        id: 3,
+        name: "Maile",
+        url: "mailnote.vercel.app" // 임시 주소이니 나중에 도메인 연결 후 변경해야함.
     }
 ];
